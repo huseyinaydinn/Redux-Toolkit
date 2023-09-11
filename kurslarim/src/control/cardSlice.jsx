@@ -23,9 +23,7 @@ const cardSlice = createSlice({
         increase: (state, action) => {
             const itemId = action.payload;
             const cardItem = state.cardItems.find((item) => item.id === itemId);
-            if (cardItem) {
-                cardItem.quantity += 1;
-            }
+            cardItem.quantity += 1;
         },
         decrease: (state, action) => {
             const cardItem = state.cardItems.find((item) => item.id === action.payload)
