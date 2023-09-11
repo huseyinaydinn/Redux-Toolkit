@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.hr {
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: darkmagenta;
+  color: white;
+}
+
+.empty-basket {
+  margin-top: 50px;
+}
+
+.basket-container {
+  position: relative;
+}
+
+.basket-container #basket-amount {
+  position: absolute;
+  width: 20px;
+  text-align: center;
+  bottom: 15px;
+  left: 10px;
+  border-radius: 50%;
+  background-color: white;
+  color: darkmagenta;
+}
+
+.basket-container {
+  cursor: pointer;
+}
+
+.basket-link {
+  color: white;
+}
+
+.course-list {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.card {
+  margin-top: 30px;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 15px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-item .img-details {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-item .img-details img {
+  max-width: 150px;
+  text-align: left;
+}
+
+.card-item .img-details .item-name {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-item .img-details .item-name .id {
+  font-size: 14px;
+  text-align: center;
+  color: darkmagenta;
+  cursor: pointer;
+}
+.card-item .quantity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-item .quantity-number {
+  padding: 5px 5px;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.card-item .quantity button {
+  border: none;
+  font-size: 18px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.card-item .price {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.delete-btn {
+  padding: 10px 20px;
+  background-color: darkmagenta;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.delete-btn:hover {
+  box-shadow: 0 0 3px darkmagenta;
+}
+
+.footer-details {
+  width: 90%;
+  margin: auto;
+}
+
+.footer-price {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.footer-price h4 {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.total-price-btn {
+  padding: 10px 10px;
+  border: 1px solid darkmagenta;
+  border-radius: 5px;
+  background-color: white;
+  color: darkmagenta;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.total-price-btn:hover {
+  box-shadow: 0px 0px 3px darkmagenta;
+}
+
+.total-price {
+  color: green;
+}
+
+.pay-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: darkmagenta;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+
+.pay-btn:hover {
+  box-shadow: 0 0 3px darkmagenta;
+}
+
+.btn-container {
+  display: flex;
+  justify-self: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .card-item {
+    padding: 2px 2px;
+  }
+
+  .card-item .img-details img {
+    width: 50px;
+  }
+
+  .card-item .img-details {
+    width: auto;
+    gap: 5px;
+  }
+
+  .card-item .img-details .item-name {
+    width: 50px;
+    gap: 5px;
+    font-size: 12px;
+  }
+
+  .card-item .price {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .delete-btn {
+    padding: 5px 10px;
+  }
+}
